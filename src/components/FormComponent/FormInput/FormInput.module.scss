@@ -1,0 +1,51 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+.input {
+  -webkit-appearance: none;
+  height: 40px;
+  border: 1px solid #d9d9d9 !important;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-indent: 12px;
+
+
+  &:focus, &:hover {
+    // -webkit-appearance: none !important;
+    border: 1px solid #1890ff !important;
+  }
+}
+.Label {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.input::-moz-placeholder {
+  font-size: 16px;
+  color: #bfbfbf;
+}
+.input::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #bfbfbf;
+}
+.input:-ms-input-placeholder {
+  font-size: 16px;
+  color: #bfbfbf;
+}
+.input::-ms-input-placeholder {
+  font-size: 16px;
+  color: #bfbfbf;
+}
+.input::placeholder {
+  font-size: 16px;
+  color: #bfbfbf;
+}
+
+.errorMsg {
+  color: #f5222d;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}

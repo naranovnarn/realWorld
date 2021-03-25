@@ -1,0 +1,43 @@
+
+.UserView {
+  display: flex;
+  align-items: center;
+}
+.createArticle {
+  height: 31.1px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #52c41a;
+  border: 1px solid #52c41a;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 25px;
+  padding: 0 10px;
+  
+  &:hover{
+    color: darken(#52c41a, 10%);
+    border: 1px solid darken(#52c41a, 10%);
+  }
+}
+.logOut {  
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  height: 51px;
+  margin: 0 25px;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0 18px;
+
+  &:hover{
+    color: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(0, 0, 0, 0.45);;
+  }
+}

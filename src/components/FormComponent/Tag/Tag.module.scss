@@ -1,0 +1,78 @@
+.tag {
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+  }
+  &__input_box {
+    width: 300px;
+    margin-right: 17px;
+  }
+  &__input {
+    -webkit-appearance: none;
+    height: 40px;
+    border: 1px solid #d9d9d9 !important;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-indent: 12px;
+    width: 100%;
+
+    &:focus,
+    &:hover {
+      border: 1px solid #1890ff !important;
+    }
+  }
+  &__input::-moz-placeholder {
+    font-size: 16px;
+    color: #bfbfbf;
+  }
+  &__input::-webkit-input-placeholder {
+    font-size: 16px;
+    color: #bfbfbf;
+  }
+  &__input:-ms-input-placeholder {
+    font-size: 16px;
+    color: #bfbfbf;
+  }
+  &__input::-ms-input-placeholder {
+    font-size: 16px;
+    color: #bfbfbf;
+  }
+  &__input::placeholder {
+    font-size: 16px;
+    color: #bfbfbf;
+  }
+  &__delete {
+    width: 120px;
+    height: 40px;
+    border: 1px solid #f5222d;
+    color: #f5222d;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 17px;
+    &:hover, &:active, &:focus{
+      border: 1px solid darken(#f5222d, 10%);
+      color: darken(#f5222d, 10%);
+      border-radius: 4px;
+    }
+  }
+  &__add {
+    width: 136px;
+    height: 40px;
+    border: 1px solid #1890ff;
+    color: #1890ff;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    &:hover, &:active, &:focus{
+      border: 1px solid darken(#1890ff, 10%);
+      color: darken(#1890ff, 10%);
+      border-radius: 4px;
+    }
+  }
+}

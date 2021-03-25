@@ -1,0 +1,121 @@
+
+.Article {
+  max-width: 941px;
+  min-width: 350px;
+  margin: 25px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.15));
+
+  &__header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 15px 15px 0 15px;
+  }
+  
+  &__title {
+    font-size: 20px;
+    line-height: 28px;
+    color: #1890ff;
+    margin-right: 15px;
+    cursor: pointer;
+    border-color: transparent;
+    &:hover{
+      color: darken(#1890ff, 10%);
+    }
+    &:target {
+      border-color: transparent;            
+    }
+  }
+
+  &__left{
+    margin-right: 10px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__tag {
+    margin-right: 8px;
+    padding: 2px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__content {
+    font-size: 12px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.75);
+    padding-left: 19px;
+    padding-right: 240px;
+    padding-bottom: 24px;
+
+  }
+  &__markdown{
+    margin-top: 25px;
+  }
+  &__heart {
+    margin-right: 5px;
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+  }
+  &__delete {
+    padding: 6px 17px;
+    color: #f5222d;
+    height: 31.1px;
+    border: 1px solid #f5222d;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 12px;
+  }
+  &__edit {
+    padding: 6px 17px 5px 17px;
+    color: #52C41A;
+    height: 31.1px;
+    border: 1px solid #52C41A;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+
+  &__ava {
+    height: 46px;
+    width: 46px;
+  }
+
+  &__info {
+    margin-right: 12px;
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.85);
+  }
+  &__date {
+    font-size: 12px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
